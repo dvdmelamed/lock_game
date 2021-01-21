@@ -1,69 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
-
-
-h1, p {
-    font-family: Roboto, sans-serif;
-    font-weight: 400;
+h1,
+p {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
 }
 
 main {
-    width: 350px;
+  width: 350px;
 }
 
 .wheel {
-    height: 40px;
-    width: 40px;
-    position: absolute;
-    float: left;
-    z-index: 1000;
-    font-size: 30px;
-    text-align: center;
-    font-family: Anton, sans-serif;
-    color: black;
-    cursor: pointer;
-    user-select: none;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  float: left;
+  z-index: 1000;
+  font-size: 30px;
+  text-align: center;
+  font-family: Anton, sans-serif;
+  color: black;
+  cursor: pointer;
+  user-select: none;
 }
 
-#wheel_1{
-    left: 167px;
-    top: 564px;
+#wheel_1 {
+  left: 167px;
+  top: 564px;
 }
 
 #wheel_2 {
-    left: 167px;
-    top: 617px;
+  left: 167px;
+  top: 617px;
 }
 
 #wheel_3 {
-    left: 167px;
-    top: 668px;
+  left: 167px;
+  top: 668px;
 }
 
 img {
-    position: relative;
-    width: 300px;
-    user-select: none;
+  position: relative;
+  width: 300px;
+  user-select: none;
 }
 
 button {
-    background-color: #32A4DB;
-    border: 0px;
-    padding: 12px 19px;
-    margin-left: px;
-    text-decoration: none;
-    color: white;
+  background-color: #32a4db;
+  border: 0px;
+  padding: 12px 19px;
+  margin-left: px;
+  text-decoration: none;
+  color: white;
+  user-select: none;
+  outline: none;
+}
+
+button:active {
+  background-color: #71c1e9;
 }
 
 #triesCounter {
-    color: #32A4DB;
-    font-size: 20px;
-    font-weight: 800;
+  color: #32a4db;
+  font-size: 20px;
+  font-weight: 800;
 }
 
 #hintText {
-    display: none;
-    font-family: Roboto, sans-serif;
-    padding-top: 10px;
+  display: none;
+  font-family: Roboto, sans-serif;
+  padding-top: 10px;
 }

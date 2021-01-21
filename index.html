@@ -1,34 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Lock Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Lock Game </title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
+  <body>
     <main>
-        <h1>The Lock Game</h1>
-        <p>Guess the combination!</p>
-        <p>Click the wheels to change numbers</p>
-        <p>Tries remaining: <span id="triesCounter">10</span></p>
-    
-        <img id="lock" src='images/lock.jpg'>
-        <div class="wheel" id="wheel_1">0</div>
-        <div class="wheel" id="wheel_2">0</div>
-        <div class="wheel" id="wheel_3">0</div>
-        
-        <!-- <button id="newButton" type="button">New Game</button> -->
-        <button id="checkButton" type="button">Check</button>
-        <button id="newButton" type="button">New Game</button>
-        <button id="hintButton" type="button">Hint</button>
-        <div id="hintText">Check the console</div>
+      <h1>The Lock Game</h1>
+      <p>Guess the combination!</p>
+      <p>Click the wheels to change numbers</p>
+      <p>Tries remaining: <span id="triesCounter">10</span></p>
 
-        <script src="script.js"></script>
+      <img id="lock" src="images/lock.jpg" />
+      <div class="wheel" id="wheel_1">0</div>
+      <div class="wheel" id="wheel_2">0</div>
+      <div class="wheel" id="wheel_3">0</div>
+
+      <!-- <button id="newButton" type="button">New Game</button> -->
+      <button id="checkButton" type="button">Check</button>
+      <button id="newButton" type="button">New Game</button>
+      <button id="hintButton" type="button">Hint</button>
+      <div id="hintText">Check the console</div>
+
+      <script src="script.js"></script>
     </main>
-
-</body>
-
+  </body>
 </html>
