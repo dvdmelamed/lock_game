@@ -83,7 +83,7 @@ document.getElementById("hintButton").onclick = function () {
     document.getElementById("hintText").style.display = "block";
     document.getElementById(
       "hintText"
-    ).innerText = `I am a multiple of 7 and 71`;
+    ).innerText = "I am a multiple of 7 and 71";
     setTimeout(() => {
       document.getElementById("hintText").style.display = "none";
     }, 2000);
