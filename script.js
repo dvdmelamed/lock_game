@@ -78,9 +78,8 @@ function init() {
   document.getElementById("checkButton").onclick = function () {
     checkImage();
   };
-}
 
-document.getElementById("hintButton").onclick = function () {
+  document.getElementById("hintButton").onclick = function () {
     document.getElementById("hintText").style.display = "block";
     document.getElementById(
       "hintText"
