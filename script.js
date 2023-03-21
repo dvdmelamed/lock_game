@@ -79,6 +79,18 @@ function init() {
   };
 }
 
+document.getElementById("hintButton").onclick = function () {
+    document.getElementById("hintText").style.display = "block";
+    document.getElementById(
+      "hintText"
+    ).innerText = `I am a multiple of 7 and 71`;
+    setTimeout(() => {
+      document.getElementById("hintText").style.display = "none";
+    }, 2000);
+  };
+}
+
+
 function dinit() {
   document.getElementById("wheel_1").onclick = null;
   document.getElementById("wheel_2").onclick = null;
