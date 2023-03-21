@@ -9,6 +9,7 @@ let wheel_1,
   secretNumber3,
   attempts;
 
+
 init();
 
 function wheelRoller(value) {
@@ -35,7 +36,7 @@ function checkImage() {
     updateAttempts(attempts);
   } else {
     document.getElementById("triesCounter").style.color = "#CB4335";
-    updateAttempts("Game Over");
+    updateAttempts("Game Over!");
     dinit();
   }
 }
