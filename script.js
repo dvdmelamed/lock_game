@@ -12,7 +12,7 @@ let wheel_1,
 init();
 
 function wheelRoller(value) {
-  if (value < 3) {
+  if (value < 9) {
     value += 1;
   } else {
     value = 0;
@@ -52,16 +52,12 @@ function init() {
   wheel1 = 0;
   wheel2 = 0;
   wheel3 = 0;
-  secretNumber1 = numberGenerator();
-  secretNumber2 = numberGenerator();
-  secretNumber3 = numberGenerator();
+  secretNumber1 = 4;
+  secretNumber2 = 9;
+  secretNumber3 = 7;
   attempts = 10;
   document.getElementById("triesCounter").style.color = "#32A4DB";
   updateAttempts(attempts);
-
-  function numberGenerator() {
-    return Math.floor(Math.random() * 4);
-  }
 
   document.getElementById("wheel_1").onclick = function () {
     wheel1 = wheelRoller(wheel1);
@@ -80,16 +76,6 @@ function init() {
 
   document.getElementById("checkButton").onclick = function () {
     checkImage();
-  };
-
-  document.getElementById("hintButton").onclick = function () {
-    document.getElementById("hintText").style.display = "block";
-    document.getElementById(
-      "hintText"
-    ).innerText = `winning combination: ${secretNumber1}  ${secretNumber2} ${secretNumber3}`;
-    setTimeout(() => {
-      document.getElementById("hintText").style.display = "none";
-    }, 2000);
   };
 }
 
