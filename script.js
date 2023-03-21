@@ -55,7 +55,7 @@ function init() {
   secretNumber1 = 4;
   secretNumber2 = 9;
   secretNumber3 = 7;
-  attempts = 10;
+  attempts = 3;
   document.getElementById("triesCounter").style.color = "#32A4DB";
   updateAttempts(attempts);
 
